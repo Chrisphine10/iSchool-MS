@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'heroku_mysql_connection'),
+    'default' => env('DB_CONNECTION', 'heroku'),
 
     /*
     |--------------------------------------------------------------------------
@@ -58,10 +58,9 @@ return [
             'strict' => false,
             'engine' => null,
         ],
-        'heroku_mysql_connection' => [
+        'heroku' => [
             'driver' => 'mysql',
             'host' => $host,
-            'port' => env('DB_PORT', '3306'),
             'database' => $database,
             'username' => $username,
             'password' => $password,
