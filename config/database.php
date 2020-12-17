@@ -58,13 +58,18 @@ return [
             'strict' => false,
             'engine' => null,
         ],
-        'heroku_mysql_connection' => array(
+        'heroku_mysql_connection' => [
             'driver' => 'mysql',
             'host' => $host,
             'database' => $database,
             'username' => $username,
             'password' => $password,
-        ),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
