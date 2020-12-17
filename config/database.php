@@ -64,12 +64,6 @@ return [
             'database' => $database,
             'username' => $username,
             'password' => $password,
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'options' => [PDO::ATTR_EMULATE_PREPARES => true],
-            'prefix' => '',
-            'strict' => false,
-            'engine' => null,
         ),
         'pgsql' => [
             'driver' => 'pgsql',
