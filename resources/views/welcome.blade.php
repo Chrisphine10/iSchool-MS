@@ -86,14 +86,12 @@
                         @auth
                             <a href="{{ url('/home') }}">@lang('Home')</a>
                         @else
-                            <a href="{{ route('login') }}">
-                            <i class="fa fa-sign-in "></i>
-                            @lang('Login')</a>
+                            <a href="{{ route('login') }}">@lang('Login')</a>
                         @endauth
                     @endif
-                    <a target='_blank' href="https://ondiekchrisphine.wixsite.com/model-3">
-                        <i class="fa fa-globe"></i>
-                        @lang('About Us')
+                    <a href="https://github.com/changeweb/Unifiedtransform">
+                        <i class="fa fa-github"></i>
+                        @lang('GitHub')
                     </a>
                 </div>
             </div>
